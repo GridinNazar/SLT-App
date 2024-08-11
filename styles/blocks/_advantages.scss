@@ -1,0 +1,49 @@
+.advantages {
+  $gap: 10px;
+
+  display: flex;
+  width: 85%;
+  column-gap: 20px;
+  justify-content: space-between;
+  line-height: 1;
+
+  &__card {
+    @include hover {
+      .advantages__card-inner {
+        translate: 0;
+      }
+    }
+
+    &-inner {
+      display: flex;
+      padding-left: $gap;
+      padding-bottom: 10px;
+      translate: 0 57%;
+      transition: 0.5s;
+    }
+
+    &-info {
+      padding-left: $gap;
+      padding-block: 10px;
+      border-left: 1px solid var(--white-color);
+    }
+
+    &-title {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    &-description {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+
+  &__counter {
+    padding-right: $gap;
+    font-size: 24px;
+    padding-top: 10px;
+    font-family: var(--font-secondary);
+  }
+}

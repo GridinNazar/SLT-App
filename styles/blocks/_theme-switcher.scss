@@ -1,0 +1,41 @@
+.theme-switcher {
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &__inner {
+    border: 1px solid var(--primary-color);
+    border-radius: 100px;
+    padding: 3px 7px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    position: relative;
+    transition: var(--transition-duration);
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 23px;
+      aspect-ratio: 1;
+      background: var(--primary-color);
+      border-radius: 50%;
+      left: var(--switcher-left-position);
+      transition: var(--switching-duration);
+    }
+  }
+
+  svg {
+    fill: var(--primary-color);
+  }
+
+  &__moon-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  &__sun-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

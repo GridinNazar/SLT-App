@@ -1,0 +1,13 @@
+.accessories {
+  display: flex;
+  gap: 15px;
+  justify-content: end;
+  margin-right: 100px;
+  span {
+    display: block;
+    width: 12px;
+    height: 70px;
+    background: #000;
+    transform: skew(-30deg);
+  }
+}

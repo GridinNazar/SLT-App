@@ -1,0 +1,21 @@
+.app {
+  max-width: 1200px;
+  background: var(--bg-color);
+  border-radius: var(--border-radius);
+  margin-inline: auto;
+  margin-top: 5vh;
+  padding: var(--app-padding);
+  transition: 1s;
+  position: relative;
+  height: 700px;
+
+  &.animated {
+    animation: change var(--animation-duration);
+  }
+}
+
+@keyframes change {
+  30% {
+    opacity: 0.2;
+  }
+}

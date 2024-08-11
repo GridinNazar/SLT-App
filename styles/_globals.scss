@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  text-wrap: nowrap;
+  color: inherit;
+}
+
+body {
+  background-image: url(../images/bg.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  font-family: var(--font-base);
+  color: var(--primary-color);
+  font-size: 16px;
+}

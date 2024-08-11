@@ -1,0 +1,37 @@
+:root {
+  --bg-color: #F9FFFD;
+  --primary-color: #141414;
+  --secondary-color: #F9FFFD;
+  --light-color: #e4ede0;
+  --white-color: #F9FFFD;
+  --app-name-color: #162c10;
+  --font-base: Cabin, sans-serif;
+  --font-secondary: 'Space Grotesk', sans-serif;
+  --border-radius: 20px;
+  --border-radius-small: 8px;
+  --transition-duration: 0.2s;
+  --switcher-left-position: 2px;
+  --app-padding: 20px;
+}
+
+.dark {
+  --bg-color: #141414;
+  --primary-color: #F9FFFD;
+  --secondary-color: #141414;
+  --app-name-color: var(--light-color);
+  --switcher-left-position: 34px;
+
+  background-image: url(../images/bg-contrast.jpeg);
+
+  .transparent-block {
+    background-image: url(../images/bg.jpeg);
+  }
+
+  .arrow__stick {
+    background-image: url(../images/bg.jpeg);
+  }
+
+  .title__app-name {
+    background-image: url(../images/bg.jpeg);
+  }
+}

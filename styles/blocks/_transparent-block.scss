@@ -1,0 +1,39 @@
+.transparent-block {
+  width: 99.5%;
+  height: 490px;
+  border-radius: 17px;
+  background-image: url(../../images/bg-contrast.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  position: absolute;
+  z-index: 2;
+  left: 0.25%;
+  bottom: 0.5%;
+  overflow: hidden;
+  padding: var(--app-padding);
+  padding-bottom: 0;
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  &__app-name {
+    font-size: 180px;
+    position: absolute;
+    left: 17px;
+    top: -116px;
+    color: var(--app-name-color);
+    transition: var(--animation-duration);
+  }
+
+  &__app-description {
+    width: 35%;
+    margin-top: 70px;
+  }
+
+  &__advantages {
+  }
+}

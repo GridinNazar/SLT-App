@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
+  align-items: center;
+
+  &__logo {
+    padding: 5px 5px 1px 5px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius-small);
+    transition: var(--transition-duration);
+
+    @include hover {
+      scale: 1.05;
+    }
+
+    &-image {
+      width: 48px;
+      height: auto;
+      g {
+        fill: var(--primary-color);
+      }
+    }
+  }
+
+  &__line {
+    height: 1px;
+    width: 100%;
+    background: var(--primary-color);
+  }
+
+  &__menu {
+
+
+    &-list {
+      display: flex;
+      list-style: none;
+      column-gap: 30px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+    }
+    
+    &-link {
+      text-decoration: none;
+      padding-block: 10px;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: var(--primary-color);
+        bottom: 5px;
+        left: 0;
+        scale: 0;
+        transition: var(--transition-duration)
+      }
+
+      @include hover {
+        &:after {
+          scale: 1;
+        }
+      }
+    }
+  }
+
+  &__authorization-buttons {
+    display: flex;
+    column-gap: 15px;
+  }
+
+  &__log-in {
+    transition: var(--transition-duration);
+
+    @include hover {
+      scale: 1.05;
+    }
+  }
+
+  &__sign-up {
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius-small);
+    padding: 8px 5px;
+    transition: var(--transition-duration);
+
+    @include hover {
+      background: var(--primary-color);
+      color: var(--secondary-color);
+    }
+  }
+}
