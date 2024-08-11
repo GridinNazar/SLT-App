@@ -572,8 +572,9 @@ body {
   display: block;
   width: 12px;
   height: 70px;
-  background: #000;
+  background: var(--secondary-color);
   transform: skew(-30deg);
+  transition: var(--animation-duration);
 }
 
 /*# sourceMappingURL=styles.css.map */
